@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wakaka Galaxy</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="container col-md-30">
+	<% for(var i=0; i<imgPath.length; i++){%>
+		<div class="box col-md-5 center">
+			<h1>Wakaka <%=title[i]%></h1>
+			<img class="img-responsive" src="images/<%=imgPath[i]%>.jpg">
+		</div>
+	<% } %>
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
